@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Area of a Triangle</title> 
+    </head>
+
+    <body>
+        <label for="base">Base:</label><br/>
+		<input type:"text" id="var1" value="O"/><br/>
+
+		<label for="height">Height:</label><br/>
+		<input type:"text" id="var2" value="O"/><br/>
+
+        <label for="area">Area:</label><br/>
+		<input type:"text" id="var3" value="O" disabled/><br/>
+
+        <input type="button" value="Calculate" onclick="Calculate()"/>
+
+        <script>
+            function Calculate() {
+                var base = Number(document.getElementById("var1").value);
+                var height = Number(document.getElementById("var2").value);
+                var area = (base * height) / 2;
+                document.getElementById("var3").value = String(area);
+
+                console.log(area + (" is the area of the triangle"))
+            }
+        </script>
+
+    </body>
+
+</html>

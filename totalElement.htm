@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find the largest of two numbers</title> 
+    </head>
+
+    <body>
+        <input type="button" value="Total Amount of Elements" onclick="totalamount()"><br/><br/>
+        <input type="text" value="0" id="showtotal" disabled>
+
+        <script>
+            function totalamount (){
+                const language = ["PHP", "Javascript", "MYSQL"]
+                document.getElementById("showtotal").value = language.length;
+
+                console.log (language.length)
+            // expected total amount of elements are 3
+            }
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Convert Minutes Into Seconds</title>
+        </head>
+
+    <body>
+        <label for="Z">Type in Minutes:</label><br/>
+        <input type:"text" id="Z" value="O"/><br/>
+
+        <label for="seconds">Seconds:</label><br/>
+        <input type:"text" id="seconds" value="O" disabled/><br/><br/>
+
+        <input type="button" value="Convert" onclick="convert()"/>
+
+        <script type="text/javascript">
+            function convert() {
+            let minuteInput = document.getElementById('Z');
+            let minutes = parseInt(minuteInput.value);
+            let seconds = minutes * 60;
+            document.getElementById('seconds').value = seconds;
+                return
+            console.log(seconds)
+            } 
+        </script>
+
+    </body>
+
+</html>

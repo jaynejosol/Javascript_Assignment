@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find the largest of two numbers</title> 
+    </head>
+
+    <body>
+
+        <input type="button" value="Find" id = "input" onclick="findelement(x)">
+        <input type="text" id="x">
+    
+        <script type="text/javascript">
+    
+        // X = input, to find the element inside the array
+        // Condition: 
+        // If an element is found inside : true
+        // If not : false
+
+            function findelement(){
+            const language = ['PHP', 'CSS', 'Javascript', 'Hello', 'Laravel', 'Node'];
+            let x = document.getElementById('x').value;
+
+                if (language.includes(x)){
+                    console.log("True")
+                } else {
+                    console.log("False")
+                }
+            }
+            
+        </script>
+
+    </body>
+
+</html>

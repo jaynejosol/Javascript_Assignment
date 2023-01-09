@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Return the total integer values of all elements in an Array</title> 
+    </head>
+
+    <body>
+        <input type="button" value="Total Values of All Element" onclick="sumvalues()"><br/><br/>
+
+        <script>
+            function sumvalues(){
+            const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            let sum = 0;
+
+            for (const value of array) {
+                sum += value;
+            }
+
+            console.log(sum);
+            }   
+        </script>
+
+    </body>
+
+</html>

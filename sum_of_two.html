@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Return the Sum of Two Number</title>
+    </head>
+	
+	<body>
+		<label for="varX">First Number:</label><br/>
+		<input type:"text" id="var X" value="O"/><br/>
+
+		<label for="varY">Second Number:</label><br/>
+		<input type:"text" id="var Y" value="O"/><br/>
+
+		<label for="varsum">Sum:</label><br/>
+		<input type:"text" id="varsum" value="O" disabled/><br/><br/>
+
+		<input type="button" value="Add" onclick="add()"/>
+		<input type="button" value="Reset" onclick="reset()"/>
+
+		<script type="text/javascript">
+
+			function reset() {
+				document.getElementById("var X").value = "0";
+				document.getElementById("var Y").value = "0";
+				document.getElementById("varsum").value = "0";
+			}
+
+			function add() {
+				var num1 = Number(document.getElementById("var X").value);
+				var num2 = Number(document.getElementById("var Y").value);
+				var sum = num1 + num2;
+				document.getElementById("varsum").value = String(sum);
+
+				console.log(sum + (" is the sum of both numbers"))
+			}
+
+	</script>
+
+    </body>
+</html> 
